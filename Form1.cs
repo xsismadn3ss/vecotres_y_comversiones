@@ -9,9 +9,15 @@ namespace CalculadoraVectores
         {
             InitializeComponent();
         }
+        //------------------METODOS AUXILIARES-------------------------------
         private double gradosToRadianes(double grados)
         {
             return grados * Math.PI/180;
+        }
+        private double getApertura(double anguloA, double anguloB)
+        {
+            double apertura = anguloB - anguloA;
+            return apertura;
         }
 
         private double ajustarApertura(double apertura)
@@ -33,7 +39,7 @@ namespace CalculadoraVectores
             }
             return signo;
         }
-        //---------------------pestaña 1-------------------------
+        //---------------------pestaña 1 SUMAR VECTORES-------------------------
         private void bttnSumarVectores_Click(object sender, EventArgs e)
         {
             //capturar el texto de los textbox e igualarlo a las componente
@@ -68,7 +74,7 @@ namespace CalculadoraVectores
             txtBz.Text = "0";
         }
 
-        //--------------------pestaña 2-------------------------
+        //--------------------pestaña 2 CALCULAR COMPONENTES-------------------------
         private void bttnCalcular_Click(object sender, EventArgs e)
         {
             double magnitud = double.Parse(txtMagnitud.Text);
@@ -88,7 +94,7 @@ namespace CalculadoraVectores
             txtMagnitud.Text = "0";
         }
 
-        //--------------------pestaña 3--------------------------
+        //--------------------pestaña 3 PRODUCTO ESCALAR--------------------------
         private void label13_Click(object sender, EventArgs e)
         {
 
@@ -101,7 +107,7 @@ namespace CalculadoraVectores
             double anguloA = double.Parse(txtAnguloA.Text);
             double anguloB = double.Parse(txtAnguloB.Text);
 
-            double apertura = anguloB - anguloA;
+            double apertura = getApertura(anguloA, anguloB);
             double signo = 0;
 
             //condicional para ajustar el angulo de apertura entre los vectores
@@ -110,7 +116,7 @@ namespace CalculadoraVectores
             //condicional para determinar el signo del producto escalar
 
             double producto_escalar = A * B * Math.Cos(apertura) * signo;
-            MessageBox.Show($"El producto escalar es: {producto_escalar}");
+            MessageBox.Show($"El producto escalar es: {Math.Round(producto_escalar,2)}");
         }
 
         private void bttnClearP3_Click(object sender, EventArgs e)
@@ -120,10 +126,35 @@ namespace CalculadoraVectores
             txtAnguloA.Text = "0";
             txtAnguloB.Text = "0";
         }
+        //--------------pestaña 4 PRODCUTO VECTORIAL----------------------
+        private void bttnProductoVectorial_Click(object sender, EventArgs e)
+        {
+            double A = double.Parse(txtMagA.Text);
+            double B = double.Parse(txtMagB.Text);
 
+            //convertir angulo A y B a radianes para obtener un calculo exacto
+            double anguloA = gradosToRadianes(double.Parse(txtAngleA.Text)); 
+            double anguloB = gradosToRadianes(double.Parse(txtAngleB.Text));
+
+            //obtener agulo fi (angulo de diferencia entre los dos)
+            double apertura = getApertura(anguloA, anguloB);
+
+
+            double producto_vectorial = A * B * Math.Sin(apertura);
+            showProductoVectorial.Text = Math.Round(producto_vectorial,2).ToString();
+        }
+        private void bttnClearPv_Click(object sender, EventArgs e)
+        {
+            txtAngleA.Text = "0";
+            txtAngleB.Text = "0";
+            txtMagA.Text = "0";
+            txtMagB.Text = "0";
+        }
+        //---------------PRESTAÑA 5 PRODUCTO ESCALAR CON COMPONENTES---------------
         private void tabPage5_Click(object sender, EventArgs e)
         {
 
         }
+
     }
 }
