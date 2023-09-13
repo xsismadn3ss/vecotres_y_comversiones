@@ -1,5 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace CalculadoraVectores
 {
@@ -7,6 +14,8 @@ namespace CalculadoraVectores
     {
         public Form1()
         {
+            BackColor = Color.Azure;
+            TransparencyKey = Color.Azure;
             InitializeComponent();
         }
         //------------------METODOS AUXILIARES-------------------------------
@@ -35,7 +44,7 @@ namespace CalculadoraVectores
             double magnitud = Math.Sqrt(x*x + y*y + z*z);
             return magnitud;
         }
-        private double[] getProductoEscalarComponentes(double[] vectorA, double[] vectorB)
+        private double[] getProductoPunto(double[] vectorA, double[] vectorB)
         {
             double[] productoPunto = {(vectorA[0] * vectorB[0]), (vectorA[1] * vectorB[1]), (vectorA[2] * vectorB[2]) };
             return productoPunto;
@@ -50,7 +59,22 @@ namespace CalculadoraVectores
             return signo;
         }
         
-        
+        private double[] getProductoCruz(double[] A, double[] B)
+        {
+            //  i = AyBz - AzBy
+            double i = A[1] * B[2] - A[2] * B[1];
+
+            //  j = AzBx - AxBz
+            double j = A[2] * B[0] - A[0] * B[2];
+            
+            //   k = AxBy -AyBx
+            double k = A[0] * B[1] - A[1] * B[0];
+
+            double[] componentes = { i, j, k };
+            return componentes;
+        }
+
+
         //---------------------pestaña 1 SUMAR VECTORES-------------------------
             
             //funcion para sumar vectores
@@ -154,7 +178,7 @@ namespace CalculadoraVectores
             double[] vectorA = { double.Parse(txtAxPe.Text), double.Parse(txtAyPe.Text), double.Parse(txtAzPe.Text) };
             double[] vectorB = { double.Parse(txtBxPe.Text), double.Parse(txtByPe.Text), double.Parse(txtBzPe.Text) };
 
-            double[] componentes = getProductoEscalarComponentes(vectorA, vectorB);
+            double[] componentes = getProductoPunto(vectorA, vectorB);
             double magnitud = getMagnitud(componentes[0], componentes[1], componentes[2] );
 
             double angulo = Math.Acos((componentes[0] + componentes[1] + componentes[2])/magnitud);
@@ -204,10 +228,43 @@ namespace CalculadoraVectores
             txtMagB.Text = "0";
             
         }
+        private void bttnCalcularPV_Click(object sender, EventArgs e)
+        {
+            double[] A = {double.Parse(txtAxPv.Text), double.Parse(txtAyPv.Text), double.Parse(txtAzPv.Text) };
+            double[] B = { double.Parse(txtBxPv.Text), double.Parse(txtByPv.Text), double.Parse(txtBzPv.Text) };
+
+            double[] AxB = getProductoPunto(A,B);
+            double magnitud = getMagnitud(AxB[0], AxB[1], AxB[2]);
+
+            MessageBox.Show($"RESULTADOS: \nMagnitud:  " +
+                $"\nComponentes: (x: {Math.Round(AxB[0],2)}, y: {Math.Round(AxB[1], 2)}, z: {Math.Round(AxB[2],2)})");
+
+        }
+        private void bttnClearCompsPv_Click(object sender, EventArgs e)
+        {
+            txtAxPv.Text = "0";
+            txtAyPv.Text = "0";
+            txtAzPv.Text = "0";
+            txtBxPv.Text = "0";
+            txtByPv.Text = "0";
+            txtBzPv.Text = "0";
+        }
         
         
         
         //---------------PRESTAÑA 5 CALCULAR VECTOR UNITARIO---------------
+        private void bttnCalcularVu_Click(object sender, EventArgs e)
+        {
+            double x = double.Parse(txtxVu.Text);
+            double y= double.Parse(txtyVu.Text);
+            double z = double.Parse(txtzVu.Text);
+
+            double magnitud = getMagnitud(x, y, z);
+
+            showVectorUnitaio.Text = $"x: {Math.Round(x/magnitud,2)}, y:{Math.Round(y/magnitud,2)}, z: {Math.Round(z/magnitud,2)}";
+            showMagnitud.Text = $"{Math.Round(magnitud,2)}";
+        }
+
         private void tabPage5_Click(object sender, EventArgs e)
         {
         }
@@ -222,6 +279,11 @@ namespace CalculadoraVectores
 
         }
         private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox5_Enter(object sender, EventArgs e)
         {
 
         }
