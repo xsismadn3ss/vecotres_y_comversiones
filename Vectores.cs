@@ -30,6 +30,16 @@ namespace CalculadoraVectores
             return aperturaAjustada;
         }
 
+        private double getMagnitud(double x, double y, double z)
+        {
+            double magnitud = Math.Sqrt(x*x + y*y + z*z);
+            return magnitud;
+        }
+        private double[] getProductoEscalarComponentes(double[] vectorA, double[] vectorB)
+        {
+            double[] productoPunto = {(vectorA[0] * vectorB[0]), (vectorA[1] * vectorB[1]), (vectorA[2] * vectorB[2]) };
+            return productoPunto;
+        }
         private int determinarSigno(double apertura)
         {
             int signo = 1;
@@ -39,7 +49,11 @@ namespace CalculadoraVectores
             }
             return signo;
         }
+        
+        
         //---------------------pestaña 1 SUMAR VECTORES-------------------------
+            
+            //funcion para sumar vectores
         private void bttnSumarVectores_Click(object sender, EventArgs e)
         {
             //capturar el texto de los textbox e igualarlo a las componente
@@ -57,7 +71,7 @@ namespace CalculadoraVectores
             double[] vectorB = { Bx, By, Bz };
             double[] vectorC = { (Ax+Bx), (Ay+By) , (Az+Bz)};
 
-            double magnitud = Math.Sqrt(Math.Pow(vectorC[0], 2) + Math.Pow(vectorC[1], 2) + Math.Pow(vectorC[2], 2));
+            double magnitud = getMagnitud(vectorC[0], vectorC[1], vectorC[2]);
 
             MessageBox.Show($"El resultado de sumar el vector A y B es: (x: {vectorC[0]},y: {vectorC[1]},z:{vectorC[2]})  \nSu magnitud es: {Math.Round(magnitud,2)}");
            
@@ -74,7 +88,11 @@ namespace CalculadoraVectores
             txtBz.Text = "0";
         }
 
+        
+        
         //--------------------pestaña 2 CALCULAR COMPONENTES-------------------------
+        
+            //funcion para calcular componentes de un vector
         private void bttnCalcular_Click(object sender, EventArgs e)
         {
             double magnitud = double.Parse(txtMagnitud.Text);
@@ -92,14 +110,17 @@ namespace CalculadoraVectores
         {
             txtAngulo.Text = "0";
             txtMagnitud.Text = "0";
+            txtA.Text = "0";
+            txtB.Text = "0";
+            txtAnguloA.Text = "0";
+            txtAnguloB.Text = "0";
         }
 
+        
+        
         //--------------------pestaña 3 PRODUCTO ESCALAR--------------------------
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
+            //funcion para calcular producto escalar con angulo y magnitudes
         private void bttnProductoEscalar_Click(object sender, EventArgs e)
         {
             double A = double.Parse(txtA.Text);
@@ -126,7 +147,39 @@ namespace CalculadoraVectores
             txtAnguloA.Text = "0";
             txtAnguloB.Text = "0";
         }
+        
+            //funcion para calcular producto escalar usando componentes
+        private void calcularProductoEscalarComp_Click(object sender, EventArgs e)
+        {
+            double[] vectorA = { double.Parse(txtAxPe.Text), double.Parse(txtAyPe.Text), double.Parse(txtAzPe.Text) };
+            double[] vectorB = { double.Parse(txtBxPe.Text), double.Parse(txtByPe.Text), double.Parse(txtBzPe.Text) };
+
+            double[] componentes = getProductoEscalarComponentes(vectorA, vectorB);
+            double magnitud = getMagnitud(componentes[0], componentes[1], componentes[2] );
+
+            double angulo = Math.Acos((componentes[0] + componentes[1] + componentes[2])/magnitud);
+
+            MessageBox.Show($"RESULTADOS: \nComponentes del producto escalar: (x:{Math.Round(componentes[0],2)}, y: {Math.Round(componentes[1],2)}, z:{Math.Round(componentes[2],2)})" +
+                $"\nMagnitud: {Math.Round(magnitud,2)} \nAngulo: {Math.Round(angulo,2)}");
+
+
+        }
+        private void clearComps_Click(object sender, EventArgs e)
+        {
+            txtAxPe.Text = "0";
+            txtAyPe.Text = "0";
+            txtAzPe.Text = "0";
+
+            txtBxPe.Text = "0";
+            txtByPe.Text = "0";
+            txtBzPe.Text = "0";
+        }
+        
+        
+        
         //--------------pestaña 4 PRODCUTO VECTORIAL----------------------
+        
+            //funcion para calcular producto vectorial con angulo y magnitudes
         private void bttnProductoVectorial_Click(object sender, EventArgs e)
         {
             double A = double.Parse(txtMagA.Text);
@@ -149,9 +202,26 @@ namespace CalculadoraVectores
             txtAngleB.Text = "0";
             txtMagA.Text = "0";
             txtMagB.Text = "0";
+            
         }
-        //---------------PRESTAÑA 5 PRODUCTO ESCALAR CON COMPONENTES---------------
+        
+        
+        
+        //---------------PRESTAÑA 5 CALCULAR VECTOR UNITARIO---------------
         private void tabPage5_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
+        private void label13_Click(object sender, EventArgs e)
         {
 
         }
