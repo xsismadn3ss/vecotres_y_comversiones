@@ -1354,6 +1354,7 @@
             this.clearComponentes.TabIndex = 60;
             this.clearComponentes.Text = "borrar";
             this.clearComponentes.UseVisualStyleBackColor = false;
+            this.clearComponentes.Click += new System.EventHandler(this.clearComponentes_Click);
             // 
             // bttnCalcularVu
             // 
