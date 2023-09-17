@@ -1484,9 +1484,9 @@
             this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(0)))), ((int)(((byte)(62)))));
             this.label45.Location = new System.Drawing.Point(3, 40);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(175, 52);
+            this.label45.Size = new System.Drawing.Size(193, 52);
             this.label45.TabIndex = 1;
-            this.label45.Text = "xsismadn3ss     \r\n\r\n";
+            this.label45.Text = "xsismadn3ss        \r\n\r\n";
             // 
             // label46
             // 
