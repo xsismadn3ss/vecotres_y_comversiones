@@ -333,6 +333,10 @@ namespace CalculadoraVectores
             showMagnitud.Text = "0";
         }
 
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         private void tabPage5_Click(object sender, EventArgs e)
         {
         }
@@ -356,5 +360,9 @@ namespace CalculadoraVectores
 
         }
 
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
