@@ -293,7 +293,7 @@ namespace CalculadoraVectores
 
             //mostrar resultados
             MessageBox.Show($"RESULTADOS:\n " +
-                $"\nMagnitud: {Math.Round(magnitud)}" +
+                $"\nMagnitud: {Math.Round(magnitud,2)}" +
                 $"\nComponentes: (x: {Math.Round(AxB[0],2)},  y: {Math.Round(AxB[1], 2)},  z: {Math.Round(AxB[2],2)})");
 
         }

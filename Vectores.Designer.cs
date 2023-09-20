@@ -649,6 +649,7 @@
             // 
             this.txtxVu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtxVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
+            this.txtxVu.ForeColor = System.Drawing.Color.White;
             this.txtxVu.Location = new System.Drawing.Point(126, 130);
             this.txtxVu.Margin = new System.Windows.Forms.Padding(2);
             this.txtxVu.Name = "txtxVu";
@@ -659,6 +660,7 @@
             // 
             this.txtyVu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtyVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
+            this.txtyVu.ForeColor = System.Drawing.Color.White;
             this.txtyVu.Location = new System.Drawing.Point(126, 182);
             this.txtyVu.Margin = new System.Windows.Forms.Padding(2);
             this.txtyVu.Name = "txtyVu";
@@ -681,6 +683,7 @@
             // 
             this.txtzVu.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtzVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
+            this.txtzVu.ForeColor = System.Drawing.Color.White;
             this.txtzVu.Location = new System.Drawing.Point(126, 235);
             this.txtzVu.Margin = new System.Windows.Forms.Padding(2);
             this.txtzVu.Name = "txtzVu";
@@ -749,6 +752,7 @@
             // txtAngulo
             // 
             this.txtAngulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
+            this.txtAngulo.ForeColor = System.Drawing.SystemColors.Window;
             this.txtAngulo.Location = new System.Drawing.Point(210, 188);
             this.txtAngulo.Margin = new System.Windows.Forms.Padding(4);
             this.txtAngulo.Name = "txtAngulo";
@@ -758,6 +762,7 @@
             // txtMagnitud
             // 
             this.txtMagnitud.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(34)))), ((int)(((byte)(68)))));
+            this.txtMagnitud.ForeColor = System.Drawing.SystemColors.Window;
             this.txtMagnitud.Location = new System.Drawing.Point(210, 135);
             this.txtMagnitud.Margin = new System.Windows.Forms.Padding(4);
             this.txtMagnitud.Name = "txtMagnitud";
