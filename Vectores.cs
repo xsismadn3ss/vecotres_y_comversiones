@@ -110,7 +110,7 @@ namespace CalculadoraVectores
         //---------------------pestaña 1 SUMAR VECTORES-------------------------
             
             //funcion para sumar vectores
-        private void bttnSumarVectores_Click(object sender, EventArgs e)
+                    private void bttnSumarVectores_Click_1(object sender, EventArgs e)
         {
             //capturar el texto de los textbox e igualarlo a las componente
             double Ax = double.Parse(txtAx.Text);
@@ -121,21 +121,21 @@ namespace CalculadoraVectores
             double By = double.Parse(txtBy.Text);
             double Bz = double.Parse(txtBz.Text);
             //-----------------------------------------------------------------
-            
+
             //declarar vectores y en el vector C sumas componentes de A y B
-            double[] vectorA = { Ax, Ay, Az};
+            double[] vectorA = { Ax, Ay, Az };
             double[] vectorB = { Bx, By, Bz };
-            double[] vectorC = { (Ax+Bx), (Ay+By) , (Az+Bz)};
+            double[] vectorC = { (Ax + Bx), (Ay + By), (Az + Bz) };
 
             double magnitud = getMagnitud(vectorC[0], vectorC[1], vectorC[2]); //calcular magnitud pasando las componentes como parametro
 
             //mostrar resultados
             MessageBox.Show($"El resultado de sumar el vector A y B es: (x: {vectorC[0]},  y: {vectorC[1]},  z:{vectorC[2]})  " +
-                $"\nSu magnitud es: {Math.Round(magnitud,2)}");
-           
+                $"\nSu magnitud es: {Math.Round(magnitud, 2)}");
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void bttnBorrar_Click(object sender, EventArgs e)
         {
             //al dar click en borrar todos los textbox seran 0
             txtAx.Text = "0";
@@ -146,12 +146,11 @@ namespace CalculadoraVectores
             txtBz.Text = "0";
         }
 
-        
-        
+
         //--------------------pestaña 2 CALCULAR COMPONENTES-------------------------
-        
-            //funcion para calcular componentes de un vector
-        private void bttnCalcular_Click(object sender, EventArgs e)
+
+        //funcion para calcular componentes de un vector
+        private void bttnCalcular_Click_1(object sender, EventArgs e)
         {
             //declarar variables igual a el dato obtenido en los textbox correspondientes
             double magnitud = double.Parse(txtMagnitud.Text);
@@ -159,16 +158,16 @@ namespace CalculadoraVectores
 
             angulo = gradosToRadianes(angulo); //convertir angulo a radianes para que el calculo sea exacto
 
-            
+
             //calcular componentes usando seno y coseno del angulo por la magnitud del vector 
             double x = magnitud * Math.Cos(angulo);
             double y = magnitud * Math.Sin(angulo);
 
             //mostrar resultados obtenidos
-            MessageBox.Show($"Las componentes del vector ingresado son: (x:{Math.Round(x,2)},  y:{Math.Round(y,2)})");
+            MessageBox.Show($"Las componentes del vector ingresado son: (x:{Math.Round(x, 2)},  y:{Math.Round(y, 2)})");
         }
 
-        private void bttmBorrarP2_Click(object sender, EventArgs e)
+        private void bttmBorrarP2_Click_1(object sender, EventArgs e)
         {
             //borrar los textbox y dejarlos en cero 
             txtAngulo.Text = "0";
@@ -179,11 +178,9 @@ namespace CalculadoraVectores
             txtAnguloB.Text = "0";
         }
 
-        
-        
         //--------------------pestaña 3 PRODUCTO ESCALAR--------------------------
-        
-            //funcion para calcular producto escalar con angulo y magnitudes
+
+        //funcion para calcular producto escalar con angulo y magnitudes
         private void bttnProductoEscalar_Click(object sender, EventArgs e)
         {
             //capturar texto y guardarlos en las variables
@@ -331,29 +328,6 @@ namespace CalculadoraVectores
             txtzVu.Text = "0";
             showVectorUnitaio.Text = "0";
             showMagnitud.Text = "0";
-        }
-
-        private void tabPage5_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox4_Enter(object sender, EventArgs e)
-        {
-
-        }
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox5_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -30,13 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.bttnBorrar = new System.Windows.Forms.Button();
@@ -147,9 +140,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tabControl1.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.tabPage7.SuspendLayout();
@@ -168,7 +158,6 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage2);
@@ -185,95 +174,6 @@
             this.tabControl1.Size = new System.Drawing.Size(768, 544);
             this.tabControl1.TabIndex = 1;
             this.tabControl1.Tag = "";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.tabPage5.Controls.Add(this.label47);
-            this.tabPage5.Controls.Add(this.label46);
-            this.tabPage5.Controls.Add(this.label45);
-            this.tabPage5.Controls.Add(this.label44);
-            this.tabPage5.Controls.Add(this.pictureBox1);
-            this.tabPage5.Controls.Add(this.pictureBox2);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(760, 515);
-            this.tabPage5.TabIndex = 7;
-            this.tabPage5.Text = "Creditos";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(24)))), ((int)(((byte)(27)))));
-            this.label47.Font = new System.Drawing.Font("MS Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(144, 284);
-            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(429, 34);
-            this.label47.TabIndex = 5;
-            this.label47.Text = "CALCULADORA DE VECTORES";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.BackColor = System.Drawing.Color.Transparent;
-            this.label46.Font = new System.Drawing.Font("MS Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.label46.Location = new System.Drawing.Point(284, 228);
-            this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(179, 19);
-            this.label46.TabIndex = 2;
-            this.label46.Text = "(Abraham Artiga) ";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.BackColor = System.Drawing.Color.Transparent;
-            this.label45.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label45.Font = new System.Drawing.Font("Forte", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(0)))), ((int)(((byte)(62)))));
-            this.label45.Location = new System.Drawing.Point(281, 195);
-            this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(177, 32);
-            this.label45.TabIndex = 1;
-            this.label45.Text = "xsismadn3ss\r\n";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(0)))), ((int)(((byte)(43)))));
-            this.label44.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label44.Font = new System.Drawing.Font("PlainGermanica", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.White;
-            this.label44.Location = new System.Drawing.Point(252, 159);
-            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(249, 37);
-            this.label44.TabIndex = 0;
-            this.label44.Text = "Desarrolado por:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(501, 508);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(499, 4);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(255, 508);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
             // 
             // tabPage1
             // 
@@ -331,6 +231,7 @@
             this.bttnBorrar.TabIndex = 31;
             this.bttnBorrar.Text = "borrar";
             this.bttnBorrar.UseVisualStyleBackColor = false;
+            this.bttnBorrar.Click += new System.EventHandler(this.bttnBorrar_Click);
             // 
             // bttnSumarVectores
             // 
@@ -345,6 +246,7 @@
             this.bttnSumarVectores.TabIndex = 30;
             this.bttnSumarVectores.Text = "sumar";
             this.bttnSumarVectores.UseVisualStyleBackColor = false;
+            this.bttnSumarVectores.Click += new System.EventHandler(this.bttnSumarVectores_Click_1);
             // 
             // txtBz
             // 
@@ -780,6 +682,7 @@
             this.bttmBorrarP2.TabIndex = 11;
             this.bttmBorrarP2.Text = "borrar";
             this.bttmBorrarP2.UseVisualStyleBackColor = false;
+            this.bttmBorrarP2.Click += new System.EventHandler(this.bttmBorrarP2_Click_1);
             // 
             // bttnCalcular
             // 
@@ -792,6 +695,7 @@
             this.bttnCalcular.TabIndex = 10;
             this.bttnCalcular.Text = "calcular componentes";
             this.bttnCalcular.UseVisualStyleBackColor = false;
+            this.bttnCalcular.Click += new System.EventHandler(this.bttnCalcular_Click_1);
             // 
             // label11
             // 
@@ -843,7 +747,6 @@
             this.tabPage3.Size = new System.Drawing.Size(760, 515);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Producto escalar";
-            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // groupBox4
             // 
@@ -872,7 +775,6 @@
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Producto Escalar usando componentes";
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
             // label28
             // 
@@ -1154,7 +1056,6 @@
             this.lbl1.Size = new System.Drawing.Size(82, 20);
             this.lbl1.TabIndex = 3;
             this.lbl1.Text = "magnitud:";
-            this.lbl1.Click += new System.EventHandler(this.label13_Click);
             // 
             // txtB
             // 
@@ -1252,7 +1153,6 @@
             this.groupBox5.TabIndex = 14;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Producto Vectorial usando componentes";
-            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // label30
             // 
@@ -1657,10 +1557,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora de vectores";
             this.tabControl1.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
@@ -1775,12 +1671,6 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.TextBox showVectorUnitaio;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.TextBox txtAngulo;
         private System.Windows.Forms.TextBox txtMagnitud;
@@ -1789,7 +1679,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label47;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Button bttnBorrar;
         private System.Windows.Forms.Button bttnSumarVectores;
