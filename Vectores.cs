@@ -37,6 +37,23 @@ namespace CalculadoraVectores
             }
             return aperturaAjustada;
         }
+
+        private void clear(Control container)
+        {
+            foreach (Control control in container.Controls)
+            {
+                if (control is TextBox textBox)
+                {
+                    textBox.Text = "";
+                }
+                if (HasChildren)
+                {
+                    clear(control);
+                }
+            }
+        }
+
+        /*--------------------------------------------------------------------*/
         private double getAnguloProductoEscalar(double[] a, double[] b)
         {
             //obtener magnitudes para los vectores
@@ -106,11 +123,27 @@ namespace CalculadoraVectores
             return componentes;
         }
 
+        private double getPE(double A, double B, double apertura, double signo)
+        {
+            //metodo para calcular el Producto escalar conociendo sus magnitudes y
+            //el angulo entre ambos vectores
+            double resultado = A * B * Math.Cos(apertura) * signo;
+            return resultado;
+        }
+
+        private double getPV(double A, double B, double apertura)
+        {
+            //metodo para calcular el Producto vectorial conociendo sus magnitudes y
+            //el angulo entre ambos vectores
+            double resultado = A * B * Math.Sin(apertura);
+            return resultado;
+        }
+
 
         //---------------------pestaña 1 SUMAR VECTORES-------------------------
-            
-            //funcion para sumar vectores
-                    private void bttnSumarVectores_Click_1(object sender, EventArgs e)
+
+        //funcion para sumar vectores
+        private void bttnSumarVectores_Click_1(object sender, EventArgs e)
         {
             //capturar el texto de los textbox e igualarlo a las componente
             double Ax = double.Parse(txtAx.Text);
@@ -132,18 +165,13 @@ namespace CalculadoraVectores
             //mostrar resultados
             MessageBox.Show($"El resultado de sumar el vector A y B es: (x: {vectorC[0]},  y: {vectorC[1]},  z:{vectorC[2]})  " +
                 $"\nSu magnitud es: {Math.Round(magnitud, 2)}");
-
+            
+            clear(this);
         }
 
         private void bttnBorrar_Click(object sender, EventArgs e)
         {
-            //al dar click en borrar todos los textbox seran 0
-            txtAx.Text = "0";
-            txtAy.Text = "0";
-            txtAz.Text = "0";
-            txtBx.Text = "0";
-            txtBy.Text = "0";
-            txtBz.Text = "0";
+            clear(this);
         }
 
 
@@ -165,17 +193,14 @@ namespace CalculadoraVectores
 
             //mostrar resultados obtenidos
             MessageBox.Show($"Las componentes del vector ingresado son: (x:{Math.Round(x, 2)},  y:{Math.Round(y, 2)})");
+
+            clear(this);
         }
 
         private void bttmBorrarP2_Click_1(object sender, EventArgs e)
         {
             //borrar los textbox y dejarlos en cero 
-            txtAngulo.Text = "0";
-            txtMagnitud.Text = "0";
-            txtA.Text = "0";
-            txtB.Text = "0";
-            txtAnguloA.Text = "0";
-            txtAnguloB.Text = "0";
+            clear(this);
         }
 
         //--------------------pestaña 3 PRODUCTO ESCALAR--------------------------
@@ -197,18 +222,18 @@ namespace CalculadoraVectores
             //aplicar metodo para determinar el signo del producto escalar
             double signo = determinarSigno(apertura);
 
-            double producto_escalar = A * B * Math.Cos(apertura) * signo;
+            double productoEscalar = getPE(A, B, apertura, signo);
+
             MessageBox.Show($"RESULTADOS:\n " +
-                $"\nEl producto escalar es: {Math.Round(producto_escalar,2)}" +
+                $"\nEl producto escalar es: {Math.Round(productoEscalar,2)}" +
                 $"\nΦ: {apertura}°");
+
+            clear(this);
         }
 
         private void bttnClearP3_Click(object sender, EventArgs e)
         {
-            txtA.Text = "0";
-            txtB.Text = "0";
-            txtAnguloA.Text = "0";
-            txtAnguloB.Text = "0";
+            clear(this);
         }
         
             //funcion para calcular producto escalar usando componentes
@@ -230,17 +255,11 @@ namespace CalculadoraVectores
                 $"\nComponentes: (x:{Math.Round(resultante[0],2)}, y: {Math.Round(resultante[1],2)},  z:{Math.Round(resultante[2],2)})" +
                 $"\nMagnitud: {Math.Round(magnitud,2)} \nAngulo: {Math.Round(angulo, 2)}°");
 
-
+            clear(this);
         }
         private void clearComps_Click(object sender, EventArgs e)
         {
-            txtAxPe.Text = "0";
-            txtAyPe.Text = "0";
-            txtAzPe.Text = "0";
-
-            txtBxPe.Text = "0";
-            txtByPe.Text = "0";
-            txtBzPe.Text = "0";
+            clear(this);
         }
         
         
@@ -261,17 +280,17 @@ namespace CalculadoraVectores
             double apertura = getApertura(anguloA, anguloB);
 
             //calcular producto vectorial 
-            double producto_vectorial = A * B * Math.Sin(apertura);
+            double producto_vectorial = getPV(A, B, apertura);
+            //double producto_vectorial = A * B * Math.Sin(apertura);
             showProductoVectorial.Text = Math.Round(producto_vectorial,2).ToString();
+
         }
+
+
+
         private void bttnClearPv_Click(object sender, EventArgs e)
         {
-            txtAngleA.Text = "0";
-            txtAngleB.Text = "0";
-            txtMagA.Text = "0";
-            txtMagB.Text = "0";
-            showProductoVectorial.Text = "0";
-            
+            clear(this);
         }
 
             //metodo para calcuar producto vectorial a partir de sus componentes 
@@ -293,15 +312,11 @@ namespace CalculadoraVectores
                 $"\nMagnitud: {Math.Round(magnitud,2)}" +
                 $"\nComponentes: (x: {Math.Round(AxB[0],2)},  y: {Math.Round(AxB[1], 2)},  z: {Math.Round(AxB[2],2)})");
 
+            clear(this);
         }
         private void bttnClearCompsPv_Click(object sender, EventArgs e)
         {
-            txtAxPv.Text = "0";
-            txtAyPv.Text = "0";
-            txtAzPv.Text = "0";
-            txtBxPv.Text = "0";
-            txtByPv.Text = "0";
-            txtBzPv.Text = "0";
+            clear(this);
         }
         
         
@@ -311,7 +326,7 @@ namespace CalculadoraVectores
         {
             //capturar datos ingresados
             double x = double.Parse(txtxVu.Text);
-            double y= double.Parse(txtyVu.Text);
+            double y = double.Parse(txtyVu.Text);
             double z = double.Parse(txtzVu.Text);
 
             //aplicar metod para calcular magnitud
@@ -323,11 +338,8 @@ namespace CalculadoraVectores
         }
         private void clearComponentes_Click(object sender, EventArgs e)
         {
-            txtxVu.Text = "0";
-            txtyVu.Text = "0";
-            txtzVu.Text = "0";
-            showVectorUnitaio.Text = "0";
-            showMagnitud.Text = "0";
+            
+            clear(this);
         }
     }
 }

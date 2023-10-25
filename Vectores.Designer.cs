@@ -171,7 +171,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeftLayout = true;
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(768, 544);
+            this.tabControl1.Size = new System.Drawing.Size(776, 544);
             this.tabControl1.TabIndex = 1;
             this.tabControl1.Tag = "";
             // 
@@ -187,7 +187,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(760, 515);
+            this.tabPage1.Size = new System.Drawing.Size(768, 515);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Sumar Vectores";
             // 
@@ -407,7 +407,7 @@
             this.tabPage7.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage7.Size = new System.Drawing.Size(760, 515);
+            this.tabPage7.Size = new System.Drawing.Size(768, 515);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Vector unitario";
             // 
@@ -512,7 +512,7 @@
             this.clearComponentes.Location = new System.Drawing.Point(178, 315);
             this.clearComponentes.Margin = new System.Windows.Forms.Padding(2);
             this.clearComponentes.Name = "clearComponentes";
-            this.clearComponentes.Size = new System.Drawing.Size(84, 39);
+            this.clearComponentes.Size = new System.Drawing.Size(90, 39);
             this.clearComponentes.TabIndex = 60;
             this.clearComponentes.Text = "borrar";
             this.clearComponentes.UseVisualStyleBackColor = false;
@@ -525,10 +525,10 @@
             this.bttnCalcularVu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bttnCalcularVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnCalcularVu.ForeColor = System.Drawing.Color.Transparent;
-            this.bttnCalcularVu.Location = new System.Drawing.Point(89, 315);
+            this.bttnCalcularVu.Location = new System.Drawing.Point(81, 315);
             this.bttnCalcularVu.Margin = new System.Windows.Forms.Padding(2);
             this.bttnCalcularVu.Name = "bttnCalcularVu";
-            this.bttnCalcularVu.Size = new System.Drawing.Size(84, 39);
+            this.bttnCalcularVu.Size = new System.Drawing.Size(92, 39);
             this.bttnCalcularVu.TabIndex = 59;
             this.bttnCalcularVu.Text = "calcular";
             this.bttnCalcularVu.UseVisualStyleBackColor = false;
@@ -627,7 +627,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(760, 515);
+            this.tabPage2.Size = new System.Drawing.Size(768, 515);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Calcular componentes";
             // 
@@ -722,12 +722,12 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("PlainGermanica", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(38, 58);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(396, 33);
+            this.label9.Size = new System.Drawing.Size(391, 36);
             this.label9.TabIndex = 7;
             this.label9.Text = "Ingresa magnitud y angulo";
             // 
@@ -744,7 +744,7 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(760, 515);
+            this.tabPage3.Size = new System.Drawing.Size(768, 515);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Producto escalar";
             // 
@@ -767,11 +767,11 @@
             this.groupBox4.Controls.Add(this.txtAyPe);
             this.groupBox4.Controls.Add(this.txtAxPe);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(20, 419);
+            this.groupBox4.Location = new System.Drawing.Point(36, 419);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(694, 458);
+            this.groupBox4.Size = new System.Drawing.Size(659, 458);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Producto Escalar usando componentes";
@@ -781,7 +781,7 @@
             this.label28.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(410, 106);
+            this.label28.Location = new System.Drawing.Point(392, 106);
             this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(122, 32);
@@ -793,7 +793,7 @@
             this.label29.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(142, 105);
+            this.label29.Location = new System.Drawing.Point(124, 105);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(122, 32);
@@ -805,7 +805,7 @@
             this.clearComps.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.clearComps.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
             this.clearComps.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearComps.Location = new System.Drawing.Point(351, 382);
+            this.clearComps.Location = new System.Drawing.Point(333, 382);
             this.clearComps.Margin = new System.Windows.Forms.Padding(2);
             this.clearComps.Name = "clearComps";
             this.clearComps.Size = new System.Drawing.Size(98, 31);
@@ -818,7 +818,7 @@
             // 
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(394, 301);
+            this.label25.Location = new System.Drawing.Point(376, 301);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(35, 20);
@@ -830,7 +830,7 @@
             this.calcularProductoEscalarComp.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.calcularProductoEscalarComp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
             this.calcularProductoEscalarComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calcularProductoEscalarComp.Location = new System.Drawing.Point(241, 382);
+            this.calcularProductoEscalarComp.Location = new System.Drawing.Point(223, 382);
             this.calcularProductoEscalarComp.Margin = new System.Windows.Forms.Padding(2);
             this.calcularProductoEscalarComp.Name = "calcularProductoEscalarComp";
             this.calcularProductoEscalarComp.Size = new System.Drawing.Size(98, 31);
@@ -843,7 +843,7 @@
             // 
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(394, 245);
+            this.label26.Location = new System.Drawing.Point(376, 245);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(34, 20);
@@ -854,7 +854,7 @@
             // 
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(394, 190);
+            this.label27.Location = new System.Drawing.Point(376, 190);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(34, 20);
@@ -865,7 +865,7 @@
             // 
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(129, 301);
+            this.label24.Location = new System.Drawing.Point(111, 301);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(34, 20);
@@ -876,7 +876,7 @@
             // 
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(129, 245);
+            this.label23.Location = new System.Drawing.Point(111, 245);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(33, 20);
@@ -887,7 +887,7 @@
             // 
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(129, 190);
+            this.label22.Location = new System.Drawing.Point(111, 190);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(33, 20);
@@ -897,7 +897,7 @@
             // txtBzPe
             // 
             this.txtBzPe.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtBzPe.Location = new System.Drawing.Point(445, 295);
+            this.txtBzPe.Location = new System.Drawing.Point(427, 295);
             this.txtBzPe.Margin = new System.Windows.Forms.Padding(2);
             this.txtBzPe.Name = "txtBzPe";
             this.txtBzPe.Size = new System.Drawing.Size(89, 27);
@@ -906,7 +906,7 @@
             // txtByPe
             // 
             this.txtByPe.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtByPe.Location = new System.Drawing.Point(445, 241);
+            this.txtByPe.Location = new System.Drawing.Point(427, 241);
             this.txtByPe.Margin = new System.Windows.Forms.Padding(2);
             this.txtByPe.Name = "txtByPe";
             this.txtByPe.Size = new System.Drawing.Size(89, 27);
@@ -915,7 +915,7 @@
             // txtBxPe
             // 
             this.txtBxPe.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtBxPe.Location = new System.Drawing.Point(445, 190);
+            this.txtBxPe.Location = new System.Drawing.Point(427, 190);
             this.txtBxPe.Margin = new System.Windows.Forms.Padding(2);
             this.txtBxPe.Name = "txtBxPe";
             this.txtBxPe.Size = new System.Drawing.Size(89, 27);
@@ -924,7 +924,7 @@
             // txtAzPe
             // 
             this.txtAzPe.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtAzPe.Location = new System.Drawing.Point(178, 295);
+            this.txtAzPe.Location = new System.Drawing.Point(160, 295);
             this.txtAzPe.Margin = new System.Windows.Forms.Padding(2);
             this.txtAzPe.Name = "txtAzPe";
             this.txtAzPe.Size = new System.Drawing.Size(89, 27);
@@ -933,7 +933,7 @@
             // txtAyPe
             // 
             this.txtAyPe.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtAyPe.Location = new System.Drawing.Point(178, 241);
+            this.txtAyPe.Location = new System.Drawing.Point(160, 241);
             this.txtAyPe.Margin = new System.Windows.Forms.Padding(2);
             this.txtAyPe.Name = "txtAyPe";
             this.txtAyPe.Size = new System.Drawing.Size(89, 27);
@@ -942,7 +942,7 @@
             // txtAxPe
             // 
             this.txtAxPe.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtAxPe.Location = new System.Drawing.Point(178, 190);
+            this.txtAxPe.Location = new System.Drawing.Point(160, 190);
             this.txtAxPe.Margin = new System.Windows.Forms.Padding(2);
             this.txtAxPe.Name = "txtAxPe";
             this.txtAxPe.Size = new System.Drawing.Size(89, 27);
@@ -963,11 +963,11 @@
             this.groupBox3.Controls.Add(this.lbl2);
             this.groupBox3.Controls.Add(this.txtA);
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(20, 22);
+            this.groupBox3.Location = new System.Drawing.Point(36, 22);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(694, 365);
+            this.groupBox3.Size = new System.Drawing.Size(659, 365);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Producto escalar";
@@ -977,7 +977,7 @@
             this.bttnClearP3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bttnClearP3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
             this.bttnClearP3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnClearP3.Location = new System.Drawing.Point(338, 289);
+            this.bttnClearP3.Location = new System.Drawing.Point(320, 289);
             this.bttnClearP3.Margin = new System.Windows.Forms.Padding(2);
             this.bttnClearP3.Name = "bttnClearP3";
             this.bttnClearP3.Size = new System.Drawing.Size(98, 36);
@@ -991,7 +991,7 @@
             this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(401, 81);
+            this.label17.Location = new System.Drawing.Point(383, 81);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(122, 32);
@@ -1003,7 +1003,7 @@
             this.bttnProductoEscalar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.bttnProductoEscalar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(60)))));
             this.bttnProductoEscalar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttnProductoEscalar.Location = new System.Drawing.Point(228, 289);
+            this.bttnProductoEscalar.Location = new System.Drawing.Point(210, 289);
             this.bttnProductoEscalar.Margin = new System.Windows.Forms.Padding(2);
             this.bttnProductoEscalar.Name = "bttnProductoEscalar";
             this.bttnProductoEscalar.Size = new System.Drawing.Size(98, 36);
@@ -1017,7 +1017,7 @@
             this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(134, 79);
+            this.label16.Location = new System.Drawing.Point(116, 79);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(122, 32);
@@ -1029,7 +1029,7 @@
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(71, 154);
+            this.label12.Location = new System.Drawing.Point(53, 154);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(82, 20);
@@ -1039,7 +1039,7 @@
             // txtAnguloB
             // 
             this.txtAnguloB.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtAnguloB.Location = new System.Drawing.Point(445, 206);
+            this.txtAnguloB.Location = new System.Drawing.Point(427, 206);
             this.txtAnguloB.Margin = new System.Windows.Forms.Padding(2);
             this.txtAnguloB.Name = "txtAnguloB";
             this.txtAnguloB.Size = new System.Drawing.Size(89, 27);
@@ -1050,7 +1050,7 @@
             this.lbl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(348, 150);
+            this.lbl1.Location = new System.Drawing.Point(330, 150);
             this.lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(82, 20);
@@ -1060,7 +1060,7 @@
             // txtB
             // 
             this.txtB.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtB.Location = new System.Drawing.Point(445, 150);
+            this.txtB.Location = new System.Drawing.Point(427, 150);
             this.txtB.Margin = new System.Windows.Forms.Padding(2);
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(89, 27);
@@ -1071,7 +1071,7 @@
             this.lbl.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.Location = new System.Drawing.Point(89, 209);
+            this.lbl.Location = new System.Drawing.Point(71, 209);
             this.lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(63, 20);
@@ -1081,7 +1081,7 @@
             // txtAnguloA
             // 
             this.txtAnguloA.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtAnguloA.Location = new System.Drawing.Point(169, 209);
+            this.txtAnguloA.Location = new System.Drawing.Point(151, 209);
             this.txtAnguloA.Margin = new System.Windows.Forms.Padding(2);
             this.txtAnguloA.Name = "txtAnguloA";
             this.txtAnguloA.Size = new System.Drawing.Size(89, 27);
@@ -1092,7 +1092,7 @@
             this.lbl2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.Location = new System.Drawing.Point(365, 209);
+            this.lbl2.Location = new System.Drawing.Point(347, 209);
             this.lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(63, 20);
@@ -1102,7 +1102,7 @@
             // txtA
             // 
             this.txtA.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtA.Location = new System.Drawing.Point(169, 150);
+            this.txtA.Location = new System.Drawing.Point(151, 150);
             this.txtA.Margin = new System.Windows.Forms.Padding(2);
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(89, 27);
@@ -1121,7 +1121,7 @@
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Size = new System.Drawing.Size(760, 515);
+            this.tabPage4.Size = new System.Drawing.Size(768, 515);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Producto vectorial";
             // 
@@ -1275,55 +1275,61 @@
             // txtBzPv
             // 
             this.txtBzPv.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtBzPv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBzPv.Location = new System.Drawing.Point(425, 271);
             this.txtBzPv.Margin = new System.Windows.Forms.Padding(2);
             this.txtBzPv.Name = "txtBzPv";
-            this.txtBzPv.Size = new System.Drawing.Size(108, 30);
+            this.txtBzPv.Size = new System.Drawing.Size(108, 28);
             this.txtBzPv.TabIndex = 48;
             // 
             // txtByPv
             // 
             this.txtByPv.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtByPv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtByPv.Location = new System.Drawing.Point(425, 219);
             this.txtByPv.Margin = new System.Windows.Forms.Padding(2);
             this.txtByPv.Name = "txtByPv";
-            this.txtByPv.Size = new System.Drawing.Size(108, 30);
+            this.txtByPv.Size = new System.Drawing.Size(108, 28);
             this.txtByPv.TabIndex = 47;
             // 
             // txtBxPv
             // 
             this.txtBxPv.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtBxPv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBxPv.Location = new System.Drawing.Point(425, 166);
             this.txtBxPv.Margin = new System.Windows.Forms.Padding(2);
             this.txtBxPv.Name = "txtBxPv";
-            this.txtBxPv.Size = new System.Drawing.Size(108, 30);
+            this.txtBxPv.Size = new System.Drawing.Size(108, 28);
             this.txtBxPv.TabIndex = 46;
             // 
             // txtAzPv
             // 
             this.txtAzPv.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtAzPv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAzPv.Location = new System.Drawing.Point(162, 271);
             this.txtAzPv.Margin = new System.Windows.Forms.Padding(2);
             this.txtAzPv.Name = "txtAzPv";
-            this.txtAzPv.Size = new System.Drawing.Size(103, 30);
+            this.txtAzPv.Size = new System.Drawing.Size(103, 28);
             this.txtAzPv.TabIndex = 45;
             // 
             // txtAyPv
             // 
             this.txtAyPv.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtAyPv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAyPv.Location = new System.Drawing.Point(162, 219);
             this.txtAyPv.Margin = new System.Windows.Forms.Padding(2);
             this.txtAyPv.Name = "txtAyPv";
-            this.txtAyPv.Size = new System.Drawing.Size(103, 30);
+            this.txtAyPv.Size = new System.Drawing.Size(103, 28);
             this.txtAyPv.TabIndex = 44;
             // 
             // txtAxPv
             // 
             this.txtAxPv.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtAxPv.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAxPv.Location = new System.Drawing.Point(162, 166);
             this.txtAxPv.Margin = new System.Windows.Forms.Padding(2);
             this.txtAxPv.Name = "txtAxPv";
-            this.txtAxPv.Size = new System.Drawing.Size(103, 30);
+            this.txtAxPv.Size = new System.Drawing.Size(103, 28);
             this.txtAxPv.TabIndex = 43;
             // 
             // groupBox2
@@ -1453,10 +1459,10 @@
             this.bttnProductoVectorial.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bttnProductoVectorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttnProductoVectorial.ForeColor = System.Drawing.Color.Transparent;
-            this.bttnProductoVectorial.Location = new System.Drawing.Point(150, 239);
+            this.bttnProductoVectorial.Location = new System.Drawing.Point(142, 239);
             this.bttnProductoVectorial.Margin = new System.Windows.Forms.Padding(2);
             this.bttnProductoVectorial.Name = "bttnProductoVectorial";
-            this.bttnProductoVectorial.Size = new System.Drawing.Size(84, 39);
+            this.bttnProductoVectorial.Size = new System.Drawing.Size(92, 39);
             this.bttnProductoVectorial.TabIndex = 10;
             this.bttnProductoVectorial.Text = "calcular";
             this.bttnProductoVectorial.UseVisualStyleBackColor = false;
